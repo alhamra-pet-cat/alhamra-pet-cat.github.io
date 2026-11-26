@@ -28,19 +28,19 @@ if(k&&CONV[k]&&CONV[k].indexOf('XXXX')<0)gtag('event','conversion',{send_to:CONV
 :root[data-theme=dark]{--bg:#150b0c;--fg:#f4eaea;--head:#ff9aa1;--mfg:#cdb9ba;--accent:#2b1517;--border:#44252a;--card:#201213;--hbg:#1c0f10;--soc:#a31520;--shadow:#000}
 *{box-sizing:border-box;margin:0}
 body{font-family:Cairo,system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.7}
-header{display:flex;align-items:center;justify-content:space-between;padding:14px 6%;background:var(--hbg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1000}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--head);line-height:1.25}
-.brand small{display:block;font-size:.78rem;font-weight:700;color:var(--orange)}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 6%;background:var(--hbg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1000;gap:18px}
+.brand{display:flex;align-items:center;gap:8px;font-size:.95rem;min-width:0;font-weight:800;color:var(--head);line-height:1.25}
+.brand small{display:block;font-size:.72rem;font-weight:700;color:var(--orange)}
 :root[data-theme=dark] .brand small{color:var(--head)}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]) .brand small{color:var(--head)}}
-.tools{display:flex;gap:8px;align-items:center}
-.tools button{font:inherit;font-weight:700;font-size:.85rem;border:1px solid var(--border);background:transparent;color:var(--head);border-radius:999px;height:38px;min-width:38px;padding:0 12px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
-.tools svg{width:18px;height:18px;fill:currentColor}
+.tools{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.tools button{font:inherit;font-weight:700;font-size:.75rem;border:1px solid var(--border);background:transparent;color:var(--head);border-radius:999px;height:32px;min-width:32px;padding:0 10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.tools svg{width:15px;height:15px;fill:currentColor}
 .tools .i-sun{display:none}
 :root[data-theme=dark] .tools .i-sun{display:block}
 :root[data-theme=dark] .tools .i-moon{display:none}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]) .tools .i-sun{display:block}:root:not([data-theme=light]) .tools .i-moon{display:none}}
-.brand img{border-radius:0;width:auto;height:48px;max-width:none;object-fit:contain}
+.brand img{border-radius:0;width:auto;height:42px;max-width:none;object-fit:contain}
 .hero{background:linear-gradient(135deg,#5e0d14 0%,#8c141d 45%,#7a0a10 100%);color:#fff;text-align:center;padding:72px 6% 80px}
 .hero img{width:210px;height:auto;margin-bottom:8px;filter:drop-shadow(0 8px 22px rgba(0,0,0,.35))}
 .hero h1{text-wrap:balance;font-size:2.2rem;font-weight:800}
